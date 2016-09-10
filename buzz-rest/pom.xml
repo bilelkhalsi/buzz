@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.business</groupId>
+    <artifactId>buzz</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>buzz-rest</artifactId>
+  <name>buzz-rest Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <packaging>jar</packaging>
+  <properties>
+  	<spring-data-rest.version>2.5.2.RELEASE</spring-data-rest.version>
+  </properties>
+  <dependencies>
+	<dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-rest-webmvc</artifactId>
+	    <version>${spring-data-rest.version}</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>buzz-rest</finalName>
+  </build>
+</project>
