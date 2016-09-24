@@ -1,0 +1,38 @@
+define(["angular",
+        "angular-material"], function(angular){
+    angular.module("buMapControl", ["ngMaterial"]);
+
+    var urls = [
+        "../../libs/material-design-icons/maps/2x_web/ic_flight_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_beenhere_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_ev_station_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_hotel_black_12dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_activity_black_24dp.png" ,
+        "../../libs/material-design-icons/maps/2x_web/ic_local_atm_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_cafe_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_car_wash_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_dining_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_gas_station_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_mall_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_movies_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_offer_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_parking_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_pharmacy_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_phone_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_pizza_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_post_office_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_play_black_48dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_printshop_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_see_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_shipping_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_local_taxi_black_48dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_person_pin_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_place_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_restaurant_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_rate_review_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_restaurant_menu_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_store_mall_directory_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_terrain_black_24dp.png",
+        "../../libs/material-design-icons/maps/2x_web/ic_transfer_within_a_station_black_24dp.png",
+    ];
+});

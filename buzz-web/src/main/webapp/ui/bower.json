@@ -1,0 +1,33 @@
+{
+  "name": "buzz",
+  "description": "project that facilate pub on the map",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "leaflet",
+    "jquery",
+    "and",
+    "material"
+  ],
+  "authors": [
+    "bilel_khalsi@live.fr"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-icons": "https://github.com/google/material-design-icons.git",
+    "angular": "1.5.8",
+    "angular-material": "^1.1.0",
+    "requirejs": "^2.2.0",
+    "leaflet": "v1.0.0-rc.3"
+  }
+}

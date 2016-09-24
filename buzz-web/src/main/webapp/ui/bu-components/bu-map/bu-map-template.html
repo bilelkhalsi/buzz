@@ -1,0 +1,70 @@
+
+<section id = "bu-map-wraper"  class="md-whiteframe-z1" bu-map-wraper>
+    <div id = "bu-map-search-wraper" class="">
+         <md-autocomplete id="bu-map-search" bu-map-search
+          md-no-cache="ctrl.noCache"
+          md-selected-item="ctrl.selectedItem"
+          md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+          md-search-text="ctrl.searchText"
+          md-selected-item-change="ctrl.selectedItemChange(item)"
+          md-items="item in ctrl.querySearch(ctrl.searchText)"
+          md-item-text="item.name"
+          md-min-length="0"
+          placeholder="Pick a big deal ..."
+          md-menu-class="autocomplete-custom-template">
+        <md-item-template>
+              <span class="item-title">
+                <md-icon class="mi">book</md-icon>
+                <span> {{item.name}} </span>
+              </span>
+              <span class="item-metadata">
+                <span class="item-metastat">
+                  <strong>{{item.watchers}}</strong> watchers
+                </span>
+                <span class="item-metastat">
+                  <strong>{{item.forks}}</strong> forks
+                </span>
+              </span>
+        </md-item-template>
+      </md-autocomplete>
+    </div>
+    <div id = "bu-map-control-wraper" bu-map-control-wraper>
+        <md-fab-speed-dial md-open="false" md-direction="up" class="md-scale">
+            <md-fab-trigger>
+              <md-button ng-dblclick="ignore($event);" aria-label="map-settings" class="md-fab md-valid">
+                <md-icon aria-label="map-settings"><i class="mi">more_vert</i></md-icon>
+              </md-button>
+            </md-fab-trigger>
+            <md-fab-actions>
+              <md-button ng-click="showGridBottomSheet()" aria-label="settings" class="md-fab md-raised md-mini">
+                <md-icon aria-label="settings"><i class="mi">settings</i></md-icon>
+              </md-button>
+              <md-button aria-label="settings" class="md-fab md-raised md-mini">
+                <md-icon aria-label="settings"><i class="mi">edit_location</i></md-icon>
+              </md-button>
+              <md-button aria-label="settings" class="md-fab md-raised md-mini">
+                <md-icon aria-label="settings"><i class="mi">show_chart</i></md-icon>
+              </md-button>
+            </md-fab-actions>
+         </md-fab-speed-dial>
+        <md-fab-speed-dial class="bu-map-control">
+            <md-fab-trigger>
+              <md-button ng-click="zoomIn($event);" ng-dblclick="ignore($event);" aria-label="zoom-in" class="md-fab md-valid">
+                <md-icon style="" aria-label="zoom-in"><i class="mi">add</i></md-icon>
+              </md-button>
+            </md-fab-trigger>
+        </md-fab-speed-dial>
+        <md-fab-speed-dial>
+            <md-fab-trigger>
+              <md-button ng-click="zoomOut($event);" ng-dblclick="ignore($event);"  aria-label="zoom-out" class="md-fab md-valid">
+                <md-icon style="line-height:1;" aria-label="zoom-out"><i class="mi">remove</i></md-icon>
+              </md-button>
+            </md-fab-trigger>
+        </md-fab-speed-dial>
+    </div>
+    <div id = "bu-map-settings">
+        <bu-map-control></bu-map-control>
+    </div>
+    <div id = "bu-map" bu-map>
+    </div>
+</section>

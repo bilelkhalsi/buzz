@@ -1,0 +1,101 @@
+// out: ../css/bu-map.css, compress: true, strictMath: true
+@vw-map-width : 100vw;
+@vh-map-height: 100vh;
+@z-index-map-control: 1000;
+
+bu-map #bu-map-wraper,
+bu-map [bu-map-wraper]{
+    position: relative;
+    width: @vw-map-width;
+    height: @vh-map-height;
+}
+
+bu-map #bu-map-wraper,
+bu-map [bu-map-wraper]{
+
+    #bu-map-search-wraper,
+    [bu-map-search-wraper]{
+        width: 30%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: @z-index-map-control;
+    }
+
+    #bu-map-control-wraper,
+    [bu-map-control-wraper]{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        z-index: @z-index-map-control;
+    }
+
+    #bu-map, [bu-map]{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+bu-map #bu-map-search-wraper,
+bu-map [bu-map-search-wraper]{
+    #bu-map-search,
+    [bu-map-search]{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+bu-map #bu-map-search,
+bu-map [bu-map-search]{
+
+}
+
+
+
+bu-map #bu-map-control-wraper,
+bu-map [bu-map-control-wraper]{
+    md-fab-speed-dial{
+
+    }
+
+    .md-button{
+
+    }
+
+    md-icon{
+        line-height:1;
+    }
+}
+
+/**
+ * AUTO-COMPLETE::
+ */
+body .md-virtual-repeat-container.md-autocomplete-suggestions-container{
+    z-index: @z-index-map-control;
+}
+
+body .md-autocomplete-suggestions-container .autocomplete-custom-template li {
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  white-space: normal;
+}
+
+body .md-autocomplete-suggestions-container .autocomplete-custom-template li:last-child {
+  border-bottom-width: 0;
+}
+
+body .md-autocomplete-suggestions-container .autocomplete-custom-template .item-title,
+body .md-autocomplete-suggestions-container .autocomplete-custom-template .item-metadata {
+  display: block;
+  line-height: 2;
+}
+
+body .md-autocomplete-suggestions-container .autocomplete-custom-template .item-title md-icon {
+  height: 18px;
+  width: 18px;
+}
